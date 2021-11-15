@@ -22,20 +22,17 @@
   "tpu_size": 8,
 
   "bucket": "chat-app-tpu-bucket-europe",
-  "model_dir": "finetune_dir",
+  "model_dir": "james_bond_checkpoints",
 
   "train_set": "james_bond_1.train.index",
-  "val_set": {},
+  "val_set": "",
 
-  "eval_harness_tasks": [
-  ],
-
-  "val_batches": 0,
-  "val_every": 400000,
-  "ckpt_every": 72,
+  "val_batches": 512,
+  "val_every": 500,
+  "ckpt_every": 500,
   "keep_every": 10000,
 
-  "name": "GPT3_6B_pile_rotary",
+  "name": "GPT3_james_bond_1",
   "wandb_project": "mesh-transformer-jax",
   "comment": ""
 }
