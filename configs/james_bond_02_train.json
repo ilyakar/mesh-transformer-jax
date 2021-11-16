@@ -10,29 +10,32 @@
   "seq": 2048,
   "cores_per_replica": 8,
   "per_replica_batch": 1,
-  "gradient_accumulation_steps": 16,
+  "gradient_accumulation_steps": 1,
 
-  "warmup_steps": 3000,
-  "anneal_steps": 300000,
+  "warmup_steps": 1,
+  "anneal_steps": 2,
   "lr": 1.2e-4,
   "end_lr": 1.2e-5,
   "weight_decay": 0.1,
-  "total_steps": 350000,
+  "total_steps": 3,
 
   "tpu_size": 8,
 
   "bucket": "chat-app-tpu-bucket-europe",
-  "model_dir": "james_bond_checkpoints",
+  "model_dir": "james_bond_02",
 
-  "train_set": "james_bond_1.train.index",
-  "val_set": "",
+  "train_set": "james_bond_02.train.index",
+  "val_set": {},
 
-  "val_batches": 512,
-  "val_every": 500,
-  "ckpt_every": 500,
-  "keep_every": 10000,
+  "eval_harness_tasks": [
+  ],
 
-  "name": "GPT3_james_bond_1",
+  "val_batches": 3,
+  "val_every": 400000,
+  "ckpt_every": 1,
+  "keep_every": 3,
+
+  "name": "James_bond_02",
   "wandb_project": "mesh-transformer-jax",
   "comment": ""
 }
