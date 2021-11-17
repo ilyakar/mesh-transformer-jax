@@ -22,9 +22,9 @@
   "tpu_size": 8,
 
   "bucket": "chat-app-tpu-bucket-europe",
-  "model_dir": "james_bond_02-4",
+  "model_dir": "james_bond_03-1",
 
-  "train_set": "james_bond_02.train.index",
+  "train_set": "james_bond_03.train.index",
   "val_set": {},
 
   "eval_harness_tasks": [
@@ -35,7 +35,7 @@
   "ckpt_every": 40,
   "keep_every": 160,
 
-  "name": "James_bond_02-4",
+  "name": "James_bond_03-1",
   "wandb_project": "James-Bond_training",
   "comment": ""
 }
